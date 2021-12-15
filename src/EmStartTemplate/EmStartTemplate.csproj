@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Emeraude" Version="2.0.0.12-preview" />
+      <PackageReference Include="Emeraude.Defaults" Version="2.0.0.12-preview" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EmStartTemplate.Admin\EmStartTemplate.Admin.csproj" />
+      <ProjectReference Include="..\EmStartTemplate.Application\EmStartTemplate.Application.csproj" />
+      <ProjectReference Include="..\EmStartTemplate.ClientBuilder\EmStartTemplate.ClientBuilder.csproj" />
+      <ProjectReference Include="..\EmStartTemplate.Domain\EmStartTemplate.Domain.csproj" />
+      <ProjectReference Include="..\EmStartTemplate.Infrastructure\EmStartTemplate.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="privateroot" />
+      <Folder Include="wwwroot" />
+    </ItemGroup>
+
+</Project>
