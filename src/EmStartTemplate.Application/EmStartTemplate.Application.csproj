@@ -5,8 +5,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Emeraude.Application" Version="2.0.0.12-preview" />
-      <PackageReference Include="Emeraude.Infrastructure.Persistence" Version="2.0.0.12-preview" />
+      <PackageReference Include="Emeraude.Application" Version="2.0.0.51-preview" />
+      <PackageReference Include="Emeraude.Infrastructure.Persistence" Version="2.0.0.51-preview" />
     </ItemGroup>
 
 </Project>
