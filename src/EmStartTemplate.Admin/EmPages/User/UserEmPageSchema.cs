@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Emeraude.Application.Admin.EmPages.Components.Renderers;
 using Emeraude.Application.Admin.EmPages.Schema;
+using Emeraude.Application.Admin.EmPages.Utilities;
 using Emeraude.Defaults.Extensions;
 using Emeraude.Defaults.ValuePipes;
 
@@ -90,8 +91,8 @@ public class UserEmPageSchema : IEmPageSchema<UserEmPageModel>
             })
             .ApplyDefaultEmPageBreadcrumbs(options =>
             {
-                options.DetailsBreadcrumbTitle = settings.GetModelPlaceholder(x => x.Name);
-                options.CurrentBreadcrumbTitle = settings.GetModelPlaceholder(x => x.Name);
+                options.DetailsBreadcrumbTitle = EmPagesPlaceholders.GetModelPlaceholder<UserEmPageModel>("users", x => x.Name);
+                options.CurrentBreadcrumbTitle = EmPagesPlaceholders.GetModelPlaceholder<UserEmPageModel>("users", x => x.Name);
             })
             .ApplyDefaultEmPageActions();
 
