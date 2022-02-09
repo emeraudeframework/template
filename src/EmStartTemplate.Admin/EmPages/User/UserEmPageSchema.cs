@@ -89,11 +89,6 @@ public class UserEmPageSchema : IEmPageSchema<UserEmPageModel>
                         item.SetComponent<EmPageFlagRenderer>();
                     });
             })
-            .ApplyDefaultEmPageBreadcrumbs(options =>
-            {
-                options.DetailsBreadcrumbTitle = EmPagesPlaceholders.GetModelPlaceholder<UserEmPageModel>("users", x => x.Name);
-                options.CurrentBreadcrumbTitle = EmPagesPlaceholders.GetModelPlaceholder<UserEmPageModel>("users", x => x.Name);
-            })
             .ApplyDefaultEmPageActions();
 
         settings.ModelActions.RemoveAt(1);
